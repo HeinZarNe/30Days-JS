@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    color: #001f3f;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.shell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-image: url(./img/wave.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading {
+    color: #001f3f;
+    font-size: 50px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    word-spacing: 5px;
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.heading span {
+    width: 80px;
+    height: 80px;
+    padding-left: 36px;
+    padding-top: 39px;
+    font-size: 35px;
+    color: #001f3f;
+    display: inline-block;
+    border-radius: 8px;
+    background: #ead532;
+    box-shadow: 8px 8px 13px #5e5514;
+    letter-spacing: 0;
+    margin: 0 14px;
+}
+
+.projects-shell {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-shell div {
+    width: 37%;
+    height: 60px;
+    margin: 11px 27px;
+    line-height: 60px;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 8px;
+    background: #ead532;
+    box-shadow: 8px 8px 15px #09080161, -8px -8px 15px #eeeee70d;
+    transition: all 0.3s;
+}
+
+.projects-shell div:hover {
+    background: hsl(53, 81%, 50%);
+    transform: scale(1.05);
+}
+
+.projects-shell div:active {
+    transform: scale(1);
+    background: hsl(53, 81%, 53%);
+}
+
+.projects-shell div a {
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+}
+
+@media screen and (max-width:769px) {
+    .projects-shell div {
+        font-size: 20px;
+        width: 42%;
+    }
+}
+
+@media screen and (max-width:676px) {
+    .heading {
+        letter-spacing: 5px;
+        word-spacing: 2px;
+        font-size: 36px;
+    }
+    .heading span {
+        width: 55px;
+        height: 55px;
+        padding-left: 21px;
+        padding-top: 25px;
+        font-size: 27px;
+        color: #001f3f;
+        display: inline-block;
+        border-radius: 8px;
+        background: #ead532;
+        box-shadow: 8px 8px 13px #5e5514;
+        letter-spacing: 0;
+        margin: 0px 10px;
+    }
+    .projects-shell div {
+        width: 81%;
+    }
+}
+
+@media screen and (max-width:426px) {
+    .heading {
+        color: #001f3f;
+        font-size: 37px;
+        font-weight: bolder;
+        margin: 40px 0px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    .heading span {
+        width: 45px;
+        height: 45px;
+        padding-left: 17px;
+        padding-top: 20px;
+        font-size: 21px;
+        color: #001f3f;
+        display: inline-block;
+        border-radius: 8px;
+        background: #ead532;
+        box-shadow: 6px 8px 13px #5e5514;
+        margin: 0 8px;
+    }
+    .projects-shell {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .projects-shell div {
+        width: 88%;
+        height: 56px;
+        margin: 11px 0px;
+        line-height: 56px;
+        font-size: 17px;
+        /* font-weight: bold; */
+        text-align: center;
+        border-radius: 8px;
+        background: #ead532;
+        box-shadow: 8px 8px 15px #09080161, -8px -8px 15px #eeeee70d;
+        transition: all 0.3s;
+    }
+    .projects-shell div a {
+        text-decoration: none;
+        color: #000000;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+}
