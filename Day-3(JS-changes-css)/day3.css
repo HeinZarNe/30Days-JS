@@ -1,0 +1,100 @@
+:root {
+    --color: #000000;
+    --blur: 10px;
+    --padding: 10px;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #6b8587;
+}
+
+.shell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.controller {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.controller label {
+    font-size: 32px;
+}
+
+.controller input {
+    margin-right: 60px;
+}
+
+.w {
+    margin-right: 0px!important;
+}
+
+.object {
+    /* display: flex; */
+    /* width: 41%; */
+    background-color: var(--color);
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: var(--padding);
+}
+
+.object img {
+    filter: blur(var(--blur));
+    width: 275px;
+}
+
+span {
+    color: var(--color);
+}
+
+@media screen and (max-width: 733px) {
+    .heading {
+        font-size: 49px;
+        font-weight: bold;
+        margin-bottom: 45px;
+    }
+    .controller label {
+        font-size: 23px;
+    }
+    .controller input {
+        margin-right: 17px;
+    }
+    .object img {
+        filter: blur(var(--blur));
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 533px) {
+    .heading {
+        font-size: 32px;
+    }
+    .controller label {
+        font-size: 20px;
+    }
+    .controller {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 70px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .object img {
+        width: 121px px;
+    }
+}

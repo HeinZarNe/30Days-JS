@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./day3.css">
+    <title>Change Css</title>
+</head>
+
+<body>
+
+    <div class="shell" name="aa">
+
+        <div class="heading">
+
+            Try to control! With <span>JS</span>
+        </div>
+
+        <div class="controller">
+
+            <label for="padding">Border:</label>
+            <input type="range" min="0" max="80" data-sizing="px" name="padding">
+
+            <label for="blur">Blur:</label>
+            <input type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+            <label for="color">Color:</label>
+            <input type="color" name="color" class="w">
+
+        </div>
+        <div class="object">
+
+            <img src="./img.jpg" alt="">
+
+        </div>
+
+    </div>
+
+
+    <script src="./day3.js"></script>
+</body>
+
+</html>
