@@ -62,7 +62,7 @@ body {
     height: 60px;
     margin: 11px 21px;
     line-height: 60px;
-    font-size: 27px;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
     border-radius: 8px;
@@ -87,7 +87,7 @@ body {
 .projects-shell div a {
     text-decoration: none;
     color: #000;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     word-spacing: 4px;
 }
 
